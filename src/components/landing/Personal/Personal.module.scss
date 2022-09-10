@@ -1,0 +1,16 @@
+@import '../../../assets/css/index.scss';
+
+.personal{
+    background: url('../../../assets/img/bg_personal.png');
+    background-size: 100% 100%;
+
+    .personal_box__list,
+    .personal_box__priorities{
+        width: 40%;
+    }
+
+    &_box{
+        display: flex;  
+        justify-content: space-between;
+    }
+}

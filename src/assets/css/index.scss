@@ -1,13 +1,16 @@
 @import './_variables.scss';
 
+@import url(
+    'https://fonts.googleapis.com/css2?family=Jost&display=swap'
+    );
 @font-face {
     font-family: "OneDays";
-    font-style: normal;
     font-weight: 400;
     src: url("../fonts/DaysOne.ttf") format("ttf"),
          url("../fonts/DaysOne.woff2") format("woff2"),
          url("../fonts/DaysOne.woff") format("woff");
   }
+
 
 
 *{
@@ -29,6 +32,7 @@ html{
     padding: 0 2rem 0 2rem;
 }
 
+
 .header_heading{
     font-size: 1rem;
 }
@@ -36,8 +40,18 @@ html{
     font-size: 0.7rem;
 }
 
+
 .main_section_heading{
     font-size: 1.8rem;
     color: $white-color;
     font-weight: 400;
 }
+
+
+.about_section_list{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    color: $black-color;
+    margin-bottom: 1rem;
+}
+

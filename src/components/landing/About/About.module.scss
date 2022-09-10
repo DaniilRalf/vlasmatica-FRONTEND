@@ -2,4 +2,32 @@
 
 .about{
    margin: $between-section 0 $between-section 0;
+
+   .about_box__list,
+   .about_box__number{
+        width: 40%;
+   }
+
+   &_box{
+     display: flex;  
+     justify-content: space-between;
+
+     &__list{}
+
+     &__number{
+
+        .number{
+            color: $white-color;
+            font-size: 10rem;
+            text-shadow: 2px 0 2px $pink-color, 
+                        0 2px 2px $blue-color, 
+                        -2px 0 2px $black-color, 
+                        0 -2px 2px $black-color;
+        }
+        .how_much{
+            transform: translateY(3rem);
+            color: $black-color;
+        }
+     }
+   }
 }

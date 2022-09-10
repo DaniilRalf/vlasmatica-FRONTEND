@@ -1,0 +1,13 @@
+@import '../assets/css/index.scss';
+
+.button{
+    background-color: $yellow-color;
+    font-size: 1rem;
+    font-family: 'OneDays', sans-serif;
+    border: none;
+    border-radius: $border-radius;
+
+    p{
+        font-size: 0.7rem;
+    }
+}

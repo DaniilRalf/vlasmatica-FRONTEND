@@ -1,0 +1,33 @@
+@import '../assets/css/index.scss';
+
+.header{
+    position: fixed;
+    width: 100%;
+
+    height: $header-heigth;
+    // background-color: yellow;
+    display: flex;
+    align-items: center;
+
+    &_box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo{
+            font-size: 1rem;
+        }
+
+        &__menu{
+            display: flex;
+            align-items: center;
+
+            &_item:not(:last-child){
+                margin-right: 3rem;
+            }
+        }
+        &__login{
+            font-size: 1rem;
+        }
+    }
+}

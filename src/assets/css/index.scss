@@ -1,0 +1,43 @@
+@import './_variables.scss';
+
+@font-face {
+    font-family: "OneDays";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/DaysOne.ttf") format("ttf"),
+         url("../fonts/DaysOne.woff2") format("woff2"),
+         url("../fonts/DaysOne.woff") format("woff");
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: 'OneDays', sans-serif;
+    color: $black-color;
+}
+
+.container{
+    width: 100%;
+    max-width: $container-widht;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+}
+
+.header_heading{
+    font-size: 1rem;
+}
+.header_menu{
+    font-size: 0.7rem;
+}
+
+.main_section_heading{
+    font-size: 1.8rem;
+    color: $white-color;
+    font-weight: 400;
+}

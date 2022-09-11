@@ -12,7 +12,12 @@
      display: flex;  
      justify-content: space-between;
 
-     &__list{}
+     &__list{
+
+      &_item{
+         margin-bottom: 1rem;
+      }
+     }
 
      &__number{
 
@@ -25,7 +30,7 @@
                         0 -2px 2px $black-color;
         }
         .how_much{
-            transform: translateY(3rem);
+            transform: translateY(2rem);
             color: $black-color;
         }
      }

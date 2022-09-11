@@ -1,5 +1,7 @@
 @import './_variables.scss';
 
+
+// FONTS=========================================================
 @import url(
     'https://fonts.googleapis.com/css2?family=Jost&display=swap'
     );
@@ -10,6 +12,44 @@
          url("../fonts/DaysOne.woff2") format("woff2"),
          url("../fonts/DaysOne.woff") format("woff");
   }
+
+.fonts_onedays_1_8_white{
+    font-size: 1.8rem;
+    font-family: 'OneDays', sans-serif;
+    color: $white-color;
+    font-weight: 400;
+}
+.fonts_onedays_1_8_black{
+    font-size: 1.8rem;
+    font-family: 'OneDays', sans-serif;
+    color: $black-color;
+    font-weight: 400;
+}
+.fonts_onedays_1{
+    font-size: 1rem;
+    font-family: 'OneDays', sans-serif;
+}
+.fonts_onedays_0_7_black{
+    font-size: 0.7rem;
+    font-family: 'OneDays', sans-serif;
+    color: $black-color;
+}
+.fonts_onedays_0_7_white{
+    font-size: 0.7rem;
+    font-family: 'OneDays', sans-serif;
+    color: $white-color;
+}
+.fonts_jost_0_8_white{
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    color: $white-color;
+}
+.fonts_jost_0_8_black{
+    font-size: 0.8rem;
+    font-family: 'Jost', sans-serif;
+    color: $black-color;
+}
+// FONTS=========================================================
 
 
 
@@ -33,25 +73,4 @@ html{
 }
 
 
-.header_heading{
-    font-size: 1rem;
-}
-.header_menu{
-    font-size: 0.7rem;
-}
-
-
-.main_section_heading{
-    font-size: 1.8rem;
-    color: $white-color;
-    font-weight: 400;
-}
-
-
-.about_section_list{
-    font-family: 'Jost', sans-serif;
-    font-size: 0.8rem;
-    color: $black-color;
-    margin-bottom: 1rem;
-}
 

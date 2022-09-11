@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import About from '../../components/landing/About/About';
 import Main from '../../components/landing/Main/Main';
 import Personal from '../../components/landing/Personal/Personal';
+import VideoCourses from '../../components/landing/VideoCourses/VideoCourses';
 
 function Landing(){
 
@@ -12,6 +13,7 @@ function Landing(){
             <Main></Main>
             <About></About>
             <Personal></Personal>
+            <VideoCourses></VideoCourses>
         </div>
     )
 }

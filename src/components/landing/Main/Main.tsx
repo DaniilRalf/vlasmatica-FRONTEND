@@ -14,7 +14,7 @@ function Main(){
                         <img src={photo} alt="my photo" />
                     </div>
                     <div className={style.main_box__btn}>
-                        <h1 className={'main_section_heading'}>Арюна Власова <br/>Репетитор по математике</h1>
+                        <h1 className={'fonts_onedays_1_8_white'}>Арюна Власова <br/>Репетитор по математике</h1>
                         <Button>Годовой онлайн курс “ОГЭ 2022-2023”</Button>
                         <Button><p>Курс в записи</p> “Экономическая задача”</Button>
                         <Button><p>Курс в записи</p> “Текстовые задачи”</Button>

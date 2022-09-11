@@ -14,9 +14,7 @@
         justify-content: space-between;
         align-items: center;
 
-        &__logo{
-            font-size: 1rem;
-        }
+        &__logo{}
 
         &__menu{
             display: flex;
@@ -26,8 +24,6 @@
                 margin-right: 3rem;
             }
         }
-        &__login{
-            font-size: 1rem;
-        }
+        &__login{}
     }
 }

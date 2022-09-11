@@ -8,15 +8,15 @@ function Header(){
             <div className="container">
                 
                 <div className={style.header_box}>
-                    <div className={style.header_box__logo + ' header_heading'}>
+                    <div className={style.header_box__logo + ' fonts_onedays_1'}>
                         @vlasmatica
                     </div>
                     <div className={style.header_box__menu}>
-                        <div className={style.header_box__menu_item + ' header_menu'}>Курсы</div>
-                        <div className={style.header_box__menu_item + ' header_menu'}>Обо мне</div>
-                        <div className={style.header_box__menu_item + ' header_menu'}>Отзывы</div>
+                        <div className={style.header_box__menu_item + ' fonts_onedays_0_7_black'}>Курсы</div>
+                        <div className={style.header_box__menu_item + ' fonts_onedays_0_7_black'}>Обо мне</div>
+                        <div className={style.header_box__menu_item + ' fonts_onedays_0_7_black'}>Отзывы</div>
                     </div>
-                    <div className={style.header_box__login}>
+                    <div className={style.header_box__login + ' fonts_onedays_1'}>
                         личный кабинет
                     </div>
                 </div>

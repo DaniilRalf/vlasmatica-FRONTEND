@@ -1,13 +1,36 @@
 
 $container-widht: 1300px;
 $header-heigth: 100px;
-$between-section: 5rem;
+$between-section: 3rem;
 
-$white-color: #FFFFFF;
+$border-radius_15: 15px;
+$border-radius_20: 20px;
+$border-radius_40: 40px;
+$padding-side: 2rem;
+
+$purple-color: #D49DFF;
+$pink-color: #EB8793;
+$orange-color: #FFB47E;
+$white-color: #FFF9F3;
+
+$g-gradient: linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%);
+$pur_oran_yel-gradient: linear-gradient(92.3deg, #D49DFF -6.94%, #EB8793 46.26%, #FFB47E 113.23%);
+$pur_oran_yel-gradient-2: radial-gradient(100% 242.42% at 100% 50.05%, #D49DFF 0%, #EB8793 50%, #FFB47E 100%);
+$wt_g-gradient: linear-gradient(92.71deg, #FFF9F3 2.61%, rgba(198, 238, 240, 0.5) 97.88%);;
+
+
+
+
+
+
+//--------------------------
+
+
 $yellow-color: #FFF968;
 $black-color: #2B2B2B;
-$purple-color: #D49DFF;
-$blue-color: #C6EEF0;
-$pink-color: #FF646D;
 
-$border-radius: 30px;
+$blue-color: #C6EEF0;
+
+
+$border-radius: 30px; //delete
+$border-radiu_20: 20px;

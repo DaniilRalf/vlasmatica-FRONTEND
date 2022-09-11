@@ -1,7 +1,6 @@
 @import '../../../assets/css/index.scss';
 
 .personal{
-    background: url('../../../assets/img/bg_personal.png');
     background-size: 100% 100%;
     padding: $between-section 0 $between-section 0;
 
@@ -11,9 +10,12 @@
     }
 
     &_box{
+        padding: $padding-side;
+        background: $pur_oran_yel-gradient-2;
+        border-radius: $border-radius_40;
         display: flex;  
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
 
 
         &__list{
@@ -22,6 +24,7 @@
                 margin-bottom: 2rem; 
             }
             &_item{
+                font-weight: bold;
                 margin-bottom: 2rem;
             }
         }
@@ -33,26 +36,26 @@
 
                 .item_contain_rigth{
                     display: grid;
-                    grid-template-columns: 1fr 5fr;
+                    grid-template-columns: 1fr 4fr;
                     grid-template-rows: 1fr;
                     grid-column-gap: 20px;
                     grid-row-gap: 0px;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                 }
     
                 .item_contain_left{
                     display: grid;
-                    grid-template-columns: 5fr 1fr;
+                    grid-template-columns: 4fr 1fr;
                     grid-template-rows: 1fr;
                     grid-column-gap: 20px;
                     grid-row-gap: 0px;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                 }
 
                 .txt{
-                    background-color: $blue-color;
+                    background: $wt_g-gradient;
                     border-radius: $border-radius;
-                    padding: 0.5rem 1rem;
+                    padding: 1rem 1.5rem;
                 }
 
                 img{

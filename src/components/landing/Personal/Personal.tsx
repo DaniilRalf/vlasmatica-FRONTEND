@@ -13,20 +13,20 @@ function Personal(){
                 
                 <div className={style.personal_box}>
                     <div className={style.personal_box__list}>
-                        <h1 className={'fonts_onedays_1_8_white'}>Индивидуальные занятия</h1>
-                        <p className={style.personal_box__list_item + ' fonts_onedays_0_7_white'}>
+                        <h1 className={'fonts_onedays_40_white'}>Индивидуальные занятия</h1>
+                        <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
                             Подготовка к ЕГЭ – профильная  
                         </p>
-                        <p className={style.personal_box__list_item + ' fonts_onedays_0_7_white'}>
+                        <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
                             Подготовка к ЕГЭ – базовая математика  
                         </p>
-                        <p className={style.personal_box__list_item + ' fonts_onedays_0_7_white'}>
+                        <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
                             Подготовка к ОГЭ
                         </p>
-                        <p className={style.personal_box__list_item + ' fonts_onedays_0_7_white'}>
+                        <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
                             Занятия по школьной программе (4-11 класс)
                         </p>
-                        <p className={style.personal_box__list_item + ' fonts_onedays_0_7_white'}>
+                        <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
                             Подготовка к контрольным, самостоятельным, ВПР
                         </p>
 
@@ -36,7 +36,7 @@ function Personal(){
                         <div className={style.personal_box__priorities_contain}>
 
                             <div className={style.item_contain_left}>
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Я буду объяснять до тех пор, пока ученик не поймет. Хоть 10, хоть 20, хоть 100 раз.
                                 </div>
                                 <div></div>
@@ -44,7 +44,7 @@ function Personal(){
 
                             <div className={style.item_contain_rigth}>
                                 <img src={arrowRigth} alt="" />
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Занятия проходят в формате онлайн, связываемся любым удобным способом (WhatsApp, ВК, Skype,Discord) и 
                                     подключаемся к онлайн-доске Sboard. Таким образом ученик меня видит, слышит, может писать и видит мои записи. 
                                     Все как на обычном уроке).
@@ -52,7 +52,7 @@ function Personal(){
                             </div>
 
                             <div className={style.item_contain_left}>
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Заниматься можно либо с компьютера с мышкой, либо с планшета со стилусом.
                                 </div>
                                 <img src={arrowLeft} alt="" />
@@ -60,13 +60,13 @@ function Personal(){
 
                             <div className={style.item_contain_rigth}>
                                 <img src={arrowRigth} alt="" />
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Всегда будут задания на дом для закрепления изученного материала.
                                 </div>
                             </div>
 
                             <div className={style.item_contain_left}>
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Все теоретические материалы я предоставляю.
                                 </div>
                                 <img src={arrowLeft} alt="" />
@@ -74,7 +74,7 @@ function Personal(){
 
                             <div className={style.item_contain_rigth}>
                                 <img src={arrowRigth} alt="" />
-                                <div className={style.txt + ' fonts_jost_0_8_black'}>
+                                <div className={style.txt + ' fonts_steppe_15_black'}>
                                     За день до занятия напоминаю с помощью сообщения.
                                 </div>
                             </div>

@@ -1,16 +1,11 @@
 @import '../assets/css/index.scss';
 
 .button{
-    background-color: $yellow-color;
-    font-size: 1rem;
-    font-family: 'OneDays', sans-serif;
-    border: none;
-    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius_15;
 
-    min-width: 15rem;
-    padding: 0.5rem;
-
-    p{
-        font-size: 0.7rem;
-    }
+    font-size: 0.80rem;
+    font-family: 'Steppe', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }

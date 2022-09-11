@@ -13,7 +13,7 @@ function Landing(){
             <Main></Main>
             <About></About>
             <Personal></Personal>
-            <VideoCourses></VideoCourses>
+            {/* <VideoCourses></VideoCourses> */}
         </div>
     )
 }

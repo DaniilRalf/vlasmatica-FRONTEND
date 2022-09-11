@@ -1,38 +1,84 @@
 @import '../../../assets/css/index.scss';
 
 .about{
-   margin: $between-section 0 $between-section 0;
+   margin: $between-section 0;
 
-   .about_box__list,
-   .about_box__number{
-        width: 40%;
-   }
 
    &_box{
-     display: flex;  
-     justify-content: space-between;
+      padding-top: $between-section;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-     &__list{
 
-      &_item{
-         margin-bottom: 1rem;
+      h1{
+         margin-bottom: 2rem;
       }
-     }
 
-     &__number{
 
-        .number{
-            color: $white-color;
-            font-size: 10rem;
-            text-shadow: 2px 0 2px $pink-color, 
-                        0 2px 2px $blue-color, 
-                        -2px 0 2px $black-color, 
-                        0 -2px 2px $black-color;
-        }
-        .how_much{
-            transform: translateY(2rem);
-            color: $black-color;
-        }
-     }
+      &__item{
+         border-radius: $border-radius_40;
+         width: 35rem;
+         padding: 1rem;
+         position: relative;
+         .number{
+            position: absolute;
+            border-radius: $border-radius_40;
+            font-size: 2rem;
+            padding: 0.5rem;
+            color: white;
+         }
+      }
+      &__item:not(:last-child){
+         margin-bottom: 2rem;
+         .number{
+            
+         }
+      }
+      &__item_p{
+         border: 2px solid $purple-color;
+         color: $purple-color;
+         .number{
+            transform: translateX(-3rem) translateY(-3.5rem);
+            background-color: $purple-color;
+         }
+      }
+      &__item_r{
+         border: 2px solid $pink-color;
+         color: $pink-color;
+         .number{
+            transform: translateX(31rem) translateY(-3.5rem);
+            background-color: $pink-color;
+         }
+      }
+      &__item_o{
+         border: 2px solid $orange-color;
+         color: $orange-color;
+         .number{
+            transform: translateX(-3rem) translateY(-3.5rem);
+            background-color: $orange-color;
+         }
+      }
+
+
+      .how{
+         padding-top: $between-section;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         .text{
+
+         }
+         .number{
+            font-size: 16rem;
+            background: $pur_oran_yel-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+         }
+      }
    }
 }

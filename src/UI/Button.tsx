@@ -3,10 +3,24 @@ import '../assets/css/index.scss'
 
 
 
-function Button({children, ...props}: {children: string} & any){
+// interface ButtonProps{
+    
+// }
+
+function Button({children, color, background, width, borderColor, border, ...props}: any){
+
+    let myStyle = {
+        color: color,
+        background: background,
+        width: width,
+        border: border,
+      };
     
     return(
-        <button {...props} className={style.button}>
+        <button {...props} 
+            className={style.button}
+            style={myStyle}
+        >
             {children}
         </button>
     )

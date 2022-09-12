@@ -1,8 +1,12 @@
 import style from './Personal.module.scss';
 import '../../../assets/css/index.scss';
-import arrowLeft from '../../../assets/img/arrow-left.svg';
-import arrowRigth from '../../../assets/img/arrow-rigth.svg';
 import Button from '../../../UI/Button';
+
+import arrow_1 from '../../../assets/img/arrow_1.svg';
+import arrow_2 from '../../../assets/img/arrow_2.svg';
+import arrow_3 from '../../../assets/img/arrow_3.svg';
+import arrow_4 from '../../../assets/img/arrow_4.svg';
+import arrow_5 from '../../../assets/img/arrow_5.svg';
 
 
 function Personal(){
@@ -30,7 +34,12 @@ function Personal(){
                             Подготовка к контрольным, самостоятельным, ВПР
                         </p>
 
-                        <Button><p>узнать подробности</p>Стоимость</Button>
+                        <Button 
+                                color={'#FFF9F3'} 
+                                background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
+                                width={'10rem'} 
+                                border={'none'}
+                        >Подробнее</Button>
                     </div>
                     <div className={style.personal_box__priorities}>
                         <div className={style.personal_box__priorities_contain}>
@@ -43,7 +52,7 @@ function Personal(){
                             </div>
 
                             <div className={style.item_contain_rigth}>
-                                <img src={arrowRigth} alt="" />
+                                <div></div>
                                 <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Занятия проходят в формате онлайн, связываемся любым удобным способом (WhatsApp, ВК, Skype,Discord) и 
                                     подключаемся к онлайн-доске Sboard. Таким образом ученик меня видит, слышит, может писать и видит мои записи. 
@@ -55,11 +64,11 @@ function Personal(){
                                 <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Заниматься можно либо с компьютера с мышкой, либо с планшета со стилусом.
                                 </div>
-                                <img src={arrowLeft} alt="" />
+                                <div></div>
                             </div>
 
                             <div className={style.item_contain_rigth}>
-                                <img src={arrowRigth} alt="" />
+                                <div></div>
                                 <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Всегда будут задания на дом для закрепления изученного материала.
                                 </div>
@@ -69,15 +78,21 @@ function Personal(){
                                 <div className={style.txt + ' fonts_steppe_15_black'}>
                                     Все теоретические материалы я предоставляю.
                                 </div>
-                                <img src={arrowLeft} alt="" />
+                                <div></div>
                             </div>
 
                             <div className={style.item_contain_rigth}>
-                                <img src={arrowRigth} alt="" />
+                                <div></div>
                                 <div className={style.txt + ' fonts_steppe_15_black'}>
                                     За день до занятия напоминаю с помощью сообщения.
                                 </div>
                             </div>
+
+                            <img className={style.arrow_1} src={arrow_1} alt="" />
+                            <img className={style.arrow_2} src={arrow_2} alt="" />
+                            <img className={style.arrow_3} src={arrow_3} alt="" />
+                            <img className={style.arrow_4} src={arrow_4} alt="" />
+                            <img className={style.arrow_5} src={arrow_5} alt="" />
 
                         </div>
                     </div>

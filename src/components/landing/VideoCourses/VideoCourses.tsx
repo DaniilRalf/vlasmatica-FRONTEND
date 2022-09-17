@@ -11,43 +11,7 @@ import Button from '../../../UI/Button';
 
 
 function VideoCourses(){
-
-    let listCourses: any = []
-
-    let construct = listCourses.map((i: any) => {
-        return(
-            <div>
-                <h1 className={'fonts_onedays_40_white'}>Индивидуальные занятия</h1>
-                <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                    Подготовка к ЕГЭ – профильная  
-                </p>
-                <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                    Подготовка к ЕГЭ – базовая математика  
-                </p>
-                <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                    Подготовка к ОГЭ
-                </p>
-                <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                    Занятия по школьной программе (4-11 класс)
-                </p>
-                <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                    Подготовка к контрольным, самостоятельным, ВПР
-                </p>
-
-                <Button 
-                        color={'#FFF9F3'} 
-                        background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
-                        width={'10rem'} 
-                        border={'none'}
-                >Подробнее</Button>
-            </div>
-            
-        )
-    })
-        
-            
-        
-    
+ 
 
     return(
         <div className={style.video}>
@@ -63,6 +27,7 @@ function VideoCourses(){
                 clickable: true,
                 }}
                 modules={[Pagination]}
+                className="video_swiper"
             >
                 <SwiperSlide>
                     <div>

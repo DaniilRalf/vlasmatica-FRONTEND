@@ -39,6 +39,11 @@
     font-family: 'OneDays', sans-serif;
     color: $white-color;
 }
+.fonts_onedays_40_black{
+    font-size: 2rem;
+    font-family: 'OneDays', sans-serif;
+    color: $black-color;
+}
 
 .fonts_steppe_30_white{
     font-size: 1.3rem;
@@ -49,6 +54,11 @@
     font-size: 1rem;
     font-family: 'Steppe', sans-serif;
     color: $white-color;
+}
+.fonts_steppe_20_black{
+    font-size: 1rem;
+    font-family: 'Steppe', sans-serif;
+    color: $black-color;
 }
 .fonts_steppe_15_black{
     font-size: 0.80rem;
@@ -71,7 +81,7 @@
 }
 
 html{
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'OneDays', sans-serif;
     color: $black-color;
 }
@@ -81,6 +91,8 @@ html{
     max-width: $container-widht;
     margin: 0 auto;
 }
+
+
 
 
 

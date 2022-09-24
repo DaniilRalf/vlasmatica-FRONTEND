@@ -8,8 +8,21 @@ import arrow_3 from '../../../assets/img/arrow_3.svg';
 import arrow_4 from '../../../assets/img/arrow_4.svg';
 import arrow_5 from '../../../assets/img/arrow_5.svg';
 
+import {useDispatch} from "react-redux";
+import { setActive, setBody } from '../../../store/slices/Modal_Slice';
+
 
 function Personal(){
+
+    // OPEN-MODAL================================
+    let dispatch = useDispatch();
+    let newModal = () => {
+        dispatch(setActive(true));
+        dispatch(setBody('sdfsfsdf'))
+    }
+    // OPEN-MODAL================================
+
+
 
     return(
         <div className={style.personal}>
@@ -39,6 +52,7 @@ function Personal(){
                                 background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
                                 width={'10rem'} 
                                 border={'none'}
+                                onClick={() => newModal()}
                         >Подробнее</Button>
                     </div>
                     <div className={style.personal_box__priorities}>

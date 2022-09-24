@@ -8,9 +8,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Button from '../../../UI/Button';
 
+import {useDispatch} from "react-redux";
+import { setActive, setBody } from '../../../store/slices/Modal_Slice';
+
 
 
 function VideoCourses(){
+
+    // OPEN-MODAL================================
+    let dispatch = useDispatch();
+    let newModal = () => {
+        dispatch(setActive(true));
+        dispatch(setBody('sdfsfsdf'))
+    }
+    // OPEN-MODAL================================
  
 
     return(
@@ -48,6 +59,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
+                        onClick={() => newModal()}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -73,6 +85,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
+                        onClick={() => newModal()}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -98,6 +111,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
+                        onClick={() => newModal()}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -123,6 +137,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
+                        onClick={() => newModal()}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>

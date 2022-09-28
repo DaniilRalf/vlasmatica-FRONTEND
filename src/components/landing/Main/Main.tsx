@@ -2,6 +2,8 @@ import style from './Main.module.scss'
 import '../../../assets/css/index.scss'
 import photo from '../../../assets/img/photo_1.png';
 import Button from '../../../UI/Button';
+import Modal from '../../../UI/Modal';
+
 
 function Main(){
 
@@ -32,6 +34,7 @@ function Main(){
                         <img src={photo} alt="my photo" />
                     </div>
                 </div>
+                
             </div>
         </div>
     )

@@ -3,9 +3,24 @@ import '../../../assets/css/index.scss';
 import Button from '../../../UI/Button';
 
 import arynaPhoto from '../../../assets/img/photo_2.png';
+import yearCourse from '../_courses-detalization/year.json';
+
+import {useDispatch} from "react-redux";
+import { setActive, setBody } from '../../../store/slices/Modal_Slice';
+
 
 
 function Year(){
+
+    // OPEN-MODAL================================
+        let dispatch = useDispatch();
+        let newModal = () => {
+            dispatch(setActive(true));
+            dispatch(setBody(yearCourse))
+        }
+    // OPEN-MODAL================================
+
+
 
     return(
         <div className={style.year}>
@@ -33,6 +48,7 @@ function Year(){
                                 background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
                                 width={'10rem'} 
                                 border={'none'}
+                                onClick={() => newModal()}
                         >Подробнее</Button>
                     </div>
                     <div className={style.year_box__img}></div>

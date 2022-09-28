@@ -3,6 +3,7 @@ import '../../../assets/css/index.scss';
 import Button from '../../../UI/Button';
 
 import arynaPhoto from '../../../assets/img/photo_2.png';
+import yearCourse from '../_courses-detalization/year.json';
 
 import {useDispatch} from "react-redux";
 import { setActive, setBody } from '../../../store/slices/Modal_Slice';
@@ -12,11 +13,11 @@ import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 function Year(){
 
     // OPEN-MODAL================================
-    let dispatch = useDispatch();
-    let newModal = () => {
-        dispatch(setActive(true));
-        dispatch(setBody('sdfsfsdf'))
-    }
+        let dispatch = useDispatch();
+        let newModal = () => {
+            dispatch(setActive(true));
+            dispatch(setBody(yearCourse))
+        }
     // OPEN-MODAL================================
 
 

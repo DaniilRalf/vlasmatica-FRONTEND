@@ -11,6 +11,8 @@ import arrow_5 from '../../../assets/img/arrow_5.svg';
 import {useDispatch} from "react-redux";
 import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 
+import aboutCourse from "../_courses-detalization/personal.json"
+
 
 function Personal(){
 
@@ -18,7 +20,7 @@ function Personal(){
     let dispatch = useDispatch();
     let newModal = () => {
         dispatch(setActive(true));
-        dispatch(setBody('sdfsfsdf'))
+        dispatch(setBody(aboutCourse))
     }
     // OPEN-MODAL================================
 

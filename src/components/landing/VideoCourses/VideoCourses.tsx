@@ -8,6 +8,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Button from '../../../UI/Button';
 
+import economicalCourse from '../_courses-detalization/economical.json'
+import textCourse from '../_courses-detalization/text.json'
+import probabilityCourse from '../_courses-detalization/probability.json'
+import graphicCourse from '../_courses-detalization/graphic.json'
+
 import {useDispatch} from "react-redux";
 import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 
@@ -17,9 +22,9 @@ function VideoCourses(){
 
     // OPEN-MODAL================================
     let dispatch = useDispatch();
-    let newModal = () => {
+    let newModal = (course: any) => {
         dispatch(setActive(true));
-        dispatch(setBody('sdfsfsdf'))
+        dispatch(setBody(course))
     }
     // OPEN-MODAL================================
  
@@ -59,7 +64,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
-                        onClick={() => newModal()}
+                        onClick={() => newModal(economicalCourse)}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -85,7 +90,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
-                        onClick={() => newModal()}
+                        onClick={() => newModal(textCourse)}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -111,7 +116,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
-                        onClick={() => newModal()}
+                        onClick={() => newModal(graphicCourse)}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>
@@ -137,7 +142,7 @@ function VideoCourses(){
                         background={'rgba(0,0,0,0)'} 
                         width={'15rem'} 
                         border={'2px solid rgb(40, 40, 40)'}
-                        onClick={() => newModal()}
+                        onClick={() => newModal(probabilityCourse)}
                     >Подробнее</Button>
                     </div>
                 </SwiperSlide>

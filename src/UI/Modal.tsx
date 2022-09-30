@@ -36,7 +36,6 @@ function Modal(){
             </div>
         );
     })
-
     let constructPrice = modalBody.prices?.map((item: any) => {
         return(
             <div key={item.name}>

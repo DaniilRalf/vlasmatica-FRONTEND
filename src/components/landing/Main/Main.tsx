@@ -2,7 +2,20 @@ import style from './Main.module.scss'
 import '../../../assets/css/index.scss'
 import photo from '../../../assets/img/photo_1.png';
 import Button from '../../../UI/Button';
-import Modal from '../../../UI/Modal';
+
+import { motion } from 'framer-motion';
+
+
+const animationMain = {
+    hidden: {
+        x: -400,
+        opacity: 0,
+    },
+    visible: {
+        x: 0,
+        opacity: 1, 
+    }
+}
 
 
 function Main(){
@@ -11,8 +24,13 @@ function Main(){
         <div className={style.main}>
             <div className="container">
                 
-                <div className={style.main_box}>
-                    <div className={style.main_box__info}>
+                <motion.div 
+                className={style.main_box}
+                initial="hidden" 
+                whileInView="visible"
+                // transition={{ ease: "easeOut", duration: .1 }}
+                >
+                    <motion.div className={style.main_box__info} variants={animationMain}>
                         <h1 className={'fonts_onedays_150_black'}>Арюна Власова</h1>
                         <p className={style.new + ' fonts_steppe_30_white'}>Ваш новый репетитор по математике</p>
                         <div className={style.btn}>
@@ -29,11 +47,11 @@ function Main(){
                                 border={'2px solid #FFF9F3'}
                             >Индивидуальные занятия</Button>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className={style.main_box__img}>
                         <img src={photo} alt="my photo" />
                     </div>
-                </div>
+                </motion.div>
                 
             </div>
         </div>

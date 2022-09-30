@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import '../../assets/css/index.scss';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -11,17 +12,33 @@ import Modal from '../../UI/Modal';
 
 function Landing(){
 
+    const reviews = useRef(null);
+    const courses = useRef(null);
+    const about = useRef(null);
+
     return(
         <div>
             <Modal></Modal>
 
-            <Header></Header>
-
+            <Header 
+                refAbout={about}
+                refCourses={courses} 
+                refReviews={reviews} 
+            ></Header>
+            
             <Main></Main>
+
+            <div ref={about}></div>
             <About></About>
+
             <Personal></Personal>
+
+            <div ref={courses}></div>
             <VideoCourses></VideoCourses>
+
             <Year></Year>
+
+            <div ref={reviews}></div>
             <Reviews></Reviews>
 
             <Footer></Footer>

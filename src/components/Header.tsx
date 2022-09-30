@@ -1,7 +1,13 @@
 import style from './Header.module.scss'
 import '../assets/css/index.scss'
 
-function Header(){
+function Header(props:any){
+
+
+    const buttonHandler = (ref: any) => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+      };
+
 
     return(
         <div className={style.header}>
@@ -12,9 +18,18 @@ function Header(){
                         @vlasmatica
                     </div>
                     <div className={style.header_box__menu}>
-                        <div className={style.header_box__menu_item + ' fonts_steppe_15_black'}>Курсы</div>
-                        <div className={style.header_box__menu_item + ' fonts_steppe_15_black'}>Обо мне</div>
-                        <div className={style.header_box__menu_item + ' fonts_steppe_15_black'}>Отзывы</div>
+                        <div 
+                            className={style.header_box__menu_item + ' fonts_steppe_15_black'} 
+                            onClick={() => buttonHandler(props.refCourses)}
+                        >Курсы</div>
+                        <div 
+                            className={style.header_box__menu_item + ' fonts_steppe_15_black'}
+                            onClick={() => buttonHandler(props.refAbout)}
+                        >Обо мне</div>
+                        <div 
+                            className={style.header_box__menu_item + ' fonts_steppe_15_black'}
+                            onClick={() => buttonHandler(props.refReviews)}
+                        >Отзывы</div>
                     </div>
                     <div className={style.header_box__login + ' fonts_steppe_15_black'}>
                         Учебный кабинет

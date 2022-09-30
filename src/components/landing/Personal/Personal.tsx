@@ -13,6 +13,20 @@ import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 
 import aboutCourse from "../_courses-detalization/personal.json"
 
+import { motion } from 'framer-motion';
+
+
+const animationMain = {
+    hidden: {
+        x: 400,
+        opacity: 0,
+    },
+    visible: {
+        x: 0,
+        opacity: 1, 
+    }
+}
+
 
 function Personal(){
 
@@ -57,7 +71,12 @@ function Personal(){
                                 onClick={() => newModal()}
                         >Подробнее</Button>
                     </div>
-                    <div className={style.personal_box__priorities}>
+                    <motion.div 
+                        className={style.personal_box__priorities}
+                        initial="hidden" 
+                        whileInView="visible"
+                        variants={animationMain}
+                    >
                         <div className={style.personal_box__priorities_contain}>
 
                             <div className={style.item_contain_left}>
@@ -111,7 +130,7 @@ function Personal(){
                             <img className={style.arrow_5} src={arrow_5} alt="" />
 
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>

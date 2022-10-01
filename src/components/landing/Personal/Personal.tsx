@@ -1,6 +1,7 @@
 import style from './Personal.module.scss';
 import '../../../assets/css/index.scss';
 import Button from '../../../UI/Button';
+import Arrow from '../../../UI/Arrow';
 
 import arrow_1 from '../../../assets/img/arrow_1.svg';
 import arrow_2 from '../../../assets/img/arrow_2.svg';
@@ -48,19 +49,19 @@ function Personal(){
                     <div className={style.personal_box__list}>
                         <h1 className={'fonts_onedays_40_white'}>Индивидуальные занятия</h1>
                         <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                            Подготовка к ЕГЭ – профильная  
+                           <Arrow color={'white'}></Arrow> Подготовка к ЕГЭ – профильная  
                         </p>
                         <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                            Подготовка к ЕГЭ – базовая математика  
+                            <Arrow color={'white'}></Arrow> Подготовка к ЕГЭ – базовая математика  
                         </p>
                         <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                            Подготовка к ОГЭ
+                            <Arrow color={'white'}></Arrow> Подготовка к ОГЭ
                         </p>
                         <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                            Занятия по школьной программе (4-11 класс)
+                            <Arrow color={'white'}></Arrow> Занятия по школьной программе (4-11 класс)
                         </p>
                         <p className={style.personal_box__list_item + ' fonts_steppe_20_white'}>
-                            Подготовка к контрольным, самостоятельным, ВПР
+                            <Arrow color={'white'}></Arrow> Подготовка к контрольным, самостоятельным, ВПР
                         </p>
 
                         <Button 

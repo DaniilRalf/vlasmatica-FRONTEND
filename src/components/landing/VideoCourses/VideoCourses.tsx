@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Button from '../../../UI/Button';
+import Arrow from '../../../UI/Arrow';
 
 import economicalCourse from '../_courses-detalization/economical.json'
 import textCourse from '../_courses-detalization/text.json'
@@ -17,6 +18,7 @@ import {useDispatch} from "react-redux";
 import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 
 import { motion } from 'framer-motion';
+
 
 
 const animationMain = {
@@ -69,13 +71,13 @@ function VideoCourses(){
                             <div>
                                 <h1 className={'fonts_onedays_40_black'}>Экономическая Задача </h1>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто перешел в 10 или 11 класс 
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто перешел в 10 или 11 класс 
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто планирует сдавать профильную математику
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто планирует сдавать профильную математику
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто хочет научиться решать задание номер 15 из профиля
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто хочет научиться решать задание номер 15 из профиля
                                 </p>
                             </div>
                             <div>
@@ -92,16 +94,16 @@ function VideoCourses(){
                             <div>
                                 <h1 className={'fonts_onedays_40_black'}>Текстовая Задача </h1>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто перешел в 8, 9, 10 или 11 класс 
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто перешел в 8, 9, 10 или 11 класс 
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто будет сдавать профильную математику или ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто будет сдавать профильную математику или ОГЭ
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
                                 </p>
                             </div>
                             <div>
@@ -118,16 +120,16 @@ function VideoCourses(){
                             <div>
                                 <h1 className={'fonts_onedays_40_black'}>Графика</h1>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто перешел в 8, 9, 10 или 11 класс 
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто перешел в 8, 9, 10 или 11 класс 
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто будет сдавать профильную математику или ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто будет сдавать профильную математику или ОГЭ
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
                                 </p>
                             </div>
                             <div>
@@ -144,16 +146,16 @@ function VideoCourses(){
                             <div>
                                 <h1 className={'fonts_onedays_40_black'}>Вероятность </h1>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто перешел в 8, 9, 10 или 11 класс 
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто перешел в 8, 9, 10 или 11 класс 
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто не умеет решать задачи или нужен формат обуения "с нуля"
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто будет сдавать профильную математику или ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто будет сдавать профильную математику или ОГЭ
                                 </p>
                                 <p className={'fonts_steppe_20_black'}>
-                                    Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
+                                    <Arrow color={'rgb(40, 40, 40)'}></Arrow> Для тех, кто хочет научиться решать задания номер 1, 11 из профиля или 21 из ОГЭ
                                 </p>
                             </div>
                             <div>

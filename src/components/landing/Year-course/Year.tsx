@@ -1,6 +1,7 @@
 import style from './Year.module.scss';
 import '../../../assets/css/index.scss';
 import Button from '../../../UI/Button';
+import Arrow from '../../../UI/Arrow';
 
 import arynaPhoto from '../../../assets/img/photo_2.png';
 import yearCourse from '../_courses-detalization/year.json';
@@ -11,7 +12,6 @@ import { setActive, setBody } from '../../../store/slices/Modal_Slice';
 
 
 function Year(){
-
     // OPEN-MODAL================================
         let dispatch = useDispatch();
         let newModal = () => {
@@ -29,18 +29,18 @@ function Year(){
                 <div className={style.year_box}>
                     <div className={style.year_box__text}>
                     <h1 className={'fonts_onedays_40_white'}>Годовой онлайн курс ”ОГЭ 2022-2023”</h1>
-                        <div>
+                        <div> 
                             <p className={style.year_box__text_item + ' fonts_steppe_20_white'}>
-                                Для тех, кто перешел в 9 класс  
+                                <Arrow color={'white'}></Arrow> Для тех, кто перешел в 9 класс  
                             </p>
                             <p className={style.year_box__text_item + ' fonts_steppe_20_white'}>
-                                Для тех, кто хочет получить 5 и подготовиться без нервов и страданий
+                                <Arrow color={'white'}></Arrow> Для тех, кто хочет получить 5 и подготовиться без нервов и страданий
                             </p>
                             <p className={style.year_box__text_item + ' fonts_steppe_20_white'}>
-                                Для тех, кто не верит, что математику можно понять и полюбить
+                                <Arrow color={'white'}></Arrow> Для тех, кто не верит, что математику можно понять и полюбить
                             </p>
                             <p className={style.year_box__text_item + ' fonts_steppe_20_white'}>
-                                Для тех, кому нужен формат подготовки «c нуля»
+                                <Arrow color={'white'}></Arrow> Для тех, кому нужен формат подготовки «c нуля»
                             </p>
                         </div>
                         <Button 

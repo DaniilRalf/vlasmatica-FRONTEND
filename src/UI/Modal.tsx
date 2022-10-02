@@ -5,6 +5,8 @@ import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import { setActive } from '../store/slices/Modal_Slice';
 
+import { motion } from 'framer-motion';
+
 
 
 function Modal(){
@@ -18,10 +20,11 @@ function Modal(){
     let constructInfoCiurses = () => {
         return(
             <div>
+                <div className='fonts_onedays_40_black'>{modalBody.title}</div>
                 <div className={style.questions}>
-                    <p className={style.questions_heading}>Актуальные вопросы:</p>
+                    <p className={style.questions_heading + ' fonts_onedays_20_black'}>Актуальные вопросы:</p>
                     {constructQuestions}
-                    <p className={style.questions_heading}>Сколько стоит?</p>
+                    <p className={style.price_heading + ' fonts_onedays_20_black'}>Сколько стоит?</p>
                     {constructPrice}
                 </div>
             </div>
@@ -32,14 +35,14 @@ function Modal(){
         return(
             <div className={style.questions_item} key={item.question}>
                 <p className={style.questions_item__question} onClick={e => myTest(e)}>{item.question}</p>
-                <p className={style.questions_item__answer}>{item.answer}</p>
+                <p className={style.questions_item__answer + ' fonts_steppe_15_black'}>{item.answer}</p>
             </div>
         );
     })
     let constructPrice = modalBody.prices?.map((item: any) => {
         return(
-            <div key={item.name}>
-                <p>{item.name} - {item.price}</p>
+            <div className={style.price_item} key={item.name}>
+                <p className={style.price_item__answer}>{item.name} - {item.price}</p>
             </div>
         );
     })

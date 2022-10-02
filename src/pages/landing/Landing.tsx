@@ -9,12 +9,16 @@ import Reviews from '../../components/landing/Reviews/Reviews';
 import VideoCourses from '../../components/landing/VideoCourses/VideoCourses';
 import Year from '../../components/landing/Year-course/Year';
 import Modal from '../../UI/Modal';
+import Social from '../../UI/Social';
 
 function Landing(){
 
     const reviews = useRef(null);
     const courses = useRef(null);
     const about = useRef(null);
+    const personal = useRef(null);
+    const year = useRef(null);
+    const main = useRef(null);
 
     return(
         <div>
@@ -24,18 +28,25 @@ function Landing(){
                 refAbout={about}
                 refCourses={courses} 
                 refReviews={reviews} 
+                refMain={main} 
             ></Header>
             
-            <Main></Main>
+            <div ref={main}></div>
+            <Main
+                refPersonal={personal} 
+                refYear={year} 
+            ></Main>
 
             <div ref={about}></div>
             <About></About>
 
+            <div ref={personal}></div>
             <Personal></Personal>
 
             <div ref={courses}></div>
             <VideoCourses></VideoCourses>
 
+            <div ref={year}></div>
             <Year></Year>
 
             <div ref={reviews}></div>

@@ -18,7 +18,15 @@ const animationMain = {
 }
 
 
-function Main(){
+function Main(props: any){
+
+
+    // SCROL TO PAGE--------------------------------------------
+        const buttonHandler = (ref: any) => {
+            ref.current.scrollIntoView({ behavior: "smooth" });
+        };
+    // SCROL TO PAGE--------------------------------------------
+
 
     return(
         <div className={style.main}>
@@ -39,12 +47,14 @@ function Main(){
                                 background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
                                 width={'22rem'} 
                                 border={'none'}
+                                onClick={() => buttonHandler(props.refYear)}
                             >Годовой онлайн курс “ОГЭ 2022-2023” </Button>
                             <Button 
                                 color={'#FFF9F3'} 
                                 background={'rgba(0,0,0,0)'} 
                                 width={'22rem'} 
                                 border={'2px solid #FFF9F3'}
+                                onClick={() => buttonHandler(props.refPersonal)}
                             >Индивидуальные занятия</Button>
                         </div>
                     </motion.div>

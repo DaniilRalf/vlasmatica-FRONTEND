@@ -55,8 +55,6 @@ function Social(){
             setTest(animationRev)
             setBuffer(0)
         }
-
-        console.log(test);
     }
 
 

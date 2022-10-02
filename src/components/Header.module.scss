@@ -7,44 +7,130 @@
     display: flex;
     align-items: center;
 
-    &_box{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .header_content{
         background: $white-color;
         border-radius: 0px 0px $border-radius_40 $border-radius_40;
-        height: $header-footer-heigth;
-        padding: 0 $padding-side;
+        // height: $header-footer-heigth;
+        padding: 2rem $padding-side;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
-        &__logo{
-            background: $red_oran-gradient;
-            border-radius: $border-radius_20;
-            padding: 1rem 0.85rem;
-            color: $white-color;
-            cursor: pointer;
-        }
 
-        &__menu{
+        .header_box{
             display: flex;
+            justify-content: space-between;
             align-items: center;
-
-            &_item{
+            width: 100%;
+            
+    
+            &__logo{
+                background: $red_oran-gradient;
+                border-radius: $border-radius_20;
+                padding: 1rem 0.85rem;
+                color: $white-color;
                 cursor: pointer;
             }
-            &_item:not(:last-child){
-                margin-right: 3rem;
+    
+            &__menu{
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 680px){
+                    display: none;
+                }
+                
+    
+                &_item{
+                    cursor: pointer;
+                }
+                &_item:not(:last-child){
+                    margin-right: 3rem;
+                }
+            }
+            &__login{
+                font-weight: 700;
+                margin-right: 20px;
+                cursor: pointer;
+
+                @media (max-width: 680px){
+                    display: none;
+                }
+            }
+    
+    
+            .social_custom{
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 680px){
+                    display: none;
+                }
             }
         }
-        &__login{
-            font-weight: 700;
-            margin-right: 20px;
-            cursor: pointer;
-        }
 
 
-        .social_custom{
-            display: flex;
-            align-items: center;
+
+        .burger_menu{
+            display: none;
+            width: 50px;
+            height: 50px;
+
+            @media (max-width: 680px){
+                display: block;
+            }
+
+            img{
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+            }
         }
+
+        .header_menu{
+            height: 0;
+            width: 100%;
+            // background-color: aqua;
+            overflow: hidden;
+
+            @media (min-width: 680px){
+                display: none;
+            }
+
+            .header_menu_link{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                &__item{
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+
+            .header_menu_social{
+                margin-top: 17px;
+                display: flex;
+                justify-content: center;
+
+                &__item{
+                    width: 46px;
+                    height: 46px;
+                }
+                &__item:not(:last-child){
+                    margin-right: 15px;
+                }
+            }
+
+
+
+            
+        }
+
     }
+
+    
 }

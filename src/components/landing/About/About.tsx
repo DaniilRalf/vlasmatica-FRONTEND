@@ -29,7 +29,6 @@ import { motion } from 'framer-motion';
 
 function About(){
 
-    let [counter, setCounter] = useState(0)
    
 
     return(
@@ -46,7 +45,7 @@ function About(){
                         initial="hidden" 
                         whileInView="visible"
                         variants={animationLeft}
-                        transition={{ ease: "easeOut", duration: 1 }}
+                        transition={{ type: 'spring'}}
                         >
                             <div className={style.number}>01.</div>
                             <div className={style.text}>

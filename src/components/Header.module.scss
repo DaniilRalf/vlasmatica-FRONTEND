@@ -17,21 +17,34 @@
         padding: 0 $padding-side;
 
         &__logo{
-            background: linear-gradient(92.3deg, $purple-color -6.94%, $pink-color 46.26%, $orange-color 113.23%);
+            background: $red_oran-gradient;
             border-radius: $border-radius_20;
-            padding: 0.5rem 0.85rem;
+            padding: 1rem 0.85rem;
+            color: $white-color;
+            cursor: pointer;
         }
 
         &__menu{
             display: flex;
             align-items: center;
 
+            &_item{
+                cursor: pointer;
+            }
             &_item:not(:last-child){
                 margin-right: 3rem;
             }
         }
         &__login{
             font-weight: 700;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+
+        .social_custom{
+            display: flex;
+            align-items: center;
         }
     }
 }

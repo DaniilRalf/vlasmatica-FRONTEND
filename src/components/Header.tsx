@@ -22,7 +22,7 @@ function Header(props:any){
     // ANIMATION------------------------------------------------
         const animation = {
             visible: {
-                height: 170,
+                height: 140,
                 transition: {
                     delay: .1
                 }
@@ -36,7 +36,7 @@ function Header(props:any){
                 height: 0,
             },
             hidden: {
-                height: 170,
+                height: 140,
                 transition: {
                     delay: .1
                 }

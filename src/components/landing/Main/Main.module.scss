@@ -13,7 +13,22 @@
         grid-row-gap: 0px;
         padding: 0 $padding-side;
 
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__img{
+
+            @include tablet{
+                margin: auto;
+                width: 60%;
+            }
+            @include mobile{
+                margin: auto;
+                width: 100%;
+            }
 
             img{
                 width: 100%;
@@ -23,15 +38,36 @@
 
         &__info{
 
+            h1{
+
+                @include tablet{
+                    text-align: center;
+                }
+
+            }
+
             .new{
                 margin: 1.5rem 0;
+
+                @include tablet{
+                    text-align: center;
+                }
             }
             .btn{
+
+                @include tablet{
+                    align-items: center;
+                }
+
                 display: flex;
                 flex-direction: column;
             }
             Button{
                 margin: 0.5rem 0;
+
+                @include tablet{
+                    max-width: 100%;
+                }
             }
         }
     }

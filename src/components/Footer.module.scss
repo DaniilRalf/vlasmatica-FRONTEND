@@ -14,5 +14,18 @@
         height: $header-footer-heigth;
         padding: 0 $padding-side;
 
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .footer_box__year,
+        .footer_box__name,
+        .footer_box__politics{
+            @include mobile{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+
     }
 }

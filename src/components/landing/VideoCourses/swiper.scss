@@ -10,7 +10,8 @@
   
   .swiper-slide {
 
-    width: 24rem !important;
+    max-width: 40% !important;
+    min-width: 20rem !important;
     height: auto !important;
     text-align: center;
     font-size: 18px;
@@ -35,7 +36,8 @@
   transform: translateY(1rem) !important;
 
   .swiper-pagination-bullet{
-      width: 10rem;
+      width: 10vw;
+      max-width: 10rem;
       border-radius: 5px;
       background: $pur_oran_yel-gradient;
   }

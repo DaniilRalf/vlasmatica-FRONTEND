@@ -3,12 +3,20 @@
 .about{
    margin: $between-section 0;
 
+   @include mobile{
+      margin: $between-section-mobile 0;
+   }
+
 
    &_box{
       padding-top: $between-section;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include mobile{
+         padding-top: $between-section-mobile;
+      }
 
 
       h1{
@@ -17,10 +25,15 @@
 
 
       &__item{
+         @include mobile{
+            max-width: 100%;
+         }
+
          border-radius: $border-radius_40;
          width: 35rem;
          padding: 1rem;
          position: relative;
+
          .number{
             position: absolute;
             border-radius: $border-radius_40;
@@ -39,8 +52,12 @@
          border: 2px solid $purple-color;
          color: $purple-color;
          .number{
-            transform: translateX(-3rem) translateY(-3.5rem);
+            transform: translateX(-2rem) translateY(-3.5rem);
             background-color: $purple-color;
+
+            @include mobile{
+               transform: translateX(0rem) translateY(-3.5rem);
+            }
          }
       }
       &__item_r{
@@ -49,14 +66,22 @@
          .number{
             transform: translateX(31rem) translateY(-3.5rem);
             background-color: $pink-color;
+
+            @include mobile{
+               transform: translateX(65vw) translateY(-3.5rem);
+            }
          }
       }
       &__item_o{
          border: 2px solid $orange-color;
          color: $orange-color;
          .number{
-            transform: translateX(-3rem) translateY(-3.5rem);
+            transform: translateX(-2rem) translateY(-3.5rem);
             background-color: $orange-color;
+
+            @include mobile{
+               transform: translateX(0rem) translateY(-3.5rem);
+            }
          }
       }
 
@@ -68,6 +93,7 @@
          align-items: center;
 
          .text{
+            text-align: center;
 
          }
          .number{
@@ -77,6 +103,10 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
+
+            @include mobile{
+               font-size: 30vw;
+            }
 
          }
       }

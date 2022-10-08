@@ -19,7 +19,7 @@ import { motion } from 'framer-motion';
 
 const animationMain = {
     hidden: {
-        x: 400,
+        x: 200,
         opacity: 0,
     },
     visible: {
@@ -64,13 +64,16 @@ function Personal(){
                             <Arrow color={'white'}></Arrow> Подготовка к контрольным, самостоятельным, ВПР
                         </p>
 
-                        <Button 
-                                color={'#FFF9F3'} 
-                                background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
-                                width={'10rem'} 
-                                border={'none'}
-                                onClick={() => newModal()}
-                        >Подробнее</Button>
+                        <div className={style.btn_box}>
+                            <Button 
+                                    color={'#FFF9F3'} 
+                                    background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
+                                    width={'10rem'} 
+                                    border={'none'}
+                                    onClick={() => newModal()}
+                            >Подробнее</Button>
+                        </div>
+                        
                     </div>
                     <motion.div 
                         className={style.personal_box__priorities}
@@ -124,11 +127,11 @@ function Personal(){
                                 </div>
                             </div>
 
-                            <img className={style.arrow_1} src={arrow_1} alt="" />
-                            <img className={style.arrow_2} src={arrow_2} alt="" />
-                            <img className={style.arrow_3} src={arrow_3} alt="" />
-                            <img className={style.arrow_4} src={arrow_4} alt="" />
-                            <img className={style.arrow_5} src={arrow_5} alt="" />
+                            <img className={style.arrow_1 + ' ' + style.arrow} src={arrow_1} alt="" />
+                            <img className={style.arrow_2 + ' ' + style.arrow} src={arrow_2} alt="" />
+                            <img className={style.arrow_3 + ' ' + style.arrow} src={arrow_3} alt="" />
+                            <img className={style.arrow_4 + ' ' + style.arrow} src={arrow_4} alt="" />
+                            <img className={style.arrow_5 + ' ' + style.arrow} src={arrow_5} alt="" />
 
                         </div>
                     </motion.div>

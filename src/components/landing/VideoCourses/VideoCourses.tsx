@@ -23,7 +23,7 @@ import { motion } from 'framer-motion';
 
 const animationMain = {
     hidden: {
-        x: 600,
+        x: 200,
         opacity: 0,
     },
     visible: {
@@ -44,6 +44,8 @@ function VideoCourses(){
     }
     // OPEN-MODAL================================
  
+    console.log(document.documentElement.scrollWidth);
+    
 
     return(
         <div className={style.video}>
@@ -58,7 +60,11 @@ function VideoCourses(){
                 transition={{ ease: "easeOut", duration: 1 }}
             >
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={ document.documentElement.scrollWidth > 1000 ? 3 : (
+                            document.documentElement.scrollWidth > 800 ? 1.5 : (
+                                document.documentElement.scrollWidth > 600 ? 0.8 : 0.4
+                            )
+                        )}
                         spaceBetween={30}
                         centeredSlides={true}
                         pagination={{

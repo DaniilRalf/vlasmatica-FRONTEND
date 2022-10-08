@@ -4,6 +4,11 @@
     background-size: 100% 100%;
     padding-top: $between-section + 10rem;
 
+    @include tablet{
+        padding-top: $between-section-mobile;
+    }
+
+
    &_box{
         display: flex;
         justify-content: space-between;
@@ -13,11 +18,20 @@
         height: 40rem;
         position: relative;
 
+        @include tablet{
+            height: auto;
+        }
+
         &__text{
             width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include tablet{
+                padding: $between-section-mobile 0;
+                width: 100%;
+            }
 
             h1{
                 margin-bottom: 2rem; 
@@ -26,15 +40,29 @@
                 font-weight: bold;
                 margin-bottom: 2rem;
             }
+            .btn_box{
+                
+                @include tablet{
+                    display: flex;
+                    justify-content: center;
+                } 
+            }
         }
         &__img{
             width: 48%;
+            @include tablet{
+                display: none;
+            }
         }
         img{
             position: absolute;
             right: 0;
             bottom: 0;
             height: 120%;
+
+            @include tablet{
+                display: none;
+            }
         }
    }
 }

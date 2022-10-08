@@ -1,3 +1,4 @@
+@import './_media.scss';
 
 $container-widht: 1300px;
 $header-footer-heigth: 100px;
@@ -21,6 +22,9 @@ $pur_oran_yel-gradient-2: radial-gradient(100% 242.42% at 100% 50.05%, #D49DFF 0
 $wt_g-gradient: linear-gradient(92.71deg, #FFF9F3 2.61%, rgba(198, 238, 240, 0.5) 97.88%);
 $pur_pin_oren-gradient: radial-gradient(100% 242.42% at 100% 50.05%, #D49DFF 0%, #EB8793 50%, #FFB47E 100%);
 $red_oran-gradient: linear-gradient(39deg, rgba(255,0,65,0.865983893557423) 26%, rgba(255,248,149,1) 100%);
+
+// MOBILE=================================
+$between-section-mobile: 1rem;
 
 
 

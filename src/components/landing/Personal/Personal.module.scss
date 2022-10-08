@@ -7,6 +7,10 @@
     .personal_box__list,
     .personal_box__priorities{
         width: 40%;
+
+        @include tablet{
+            width: 100%;
+        }
     }
 
     &_box{
@@ -16,6 +20,10 @@
         display: flex;  
         justify-content: space-between;
         align-items: center;
+
+        @include tablet{
+            flex-direction: column;
+        }
 
 
         &__list{
@@ -27,6 +35,21 @@
             &_item{
                 font-weight: bold;
                 margin-bottom: 2rem;
+            }
+
+            .btn_box{
+
+                @include tablet{
+                    display: flex;
+                    justify-content: center;
+                } 
+            }
+
+            Button{
+        
+                @include tablet{
+                    margin-bottom: 2rem;
+                }
             }
         }
 
@@ -70,6 +93,13 @@
                 .arrow_3{ transform: translateY(-20rem) translateX(0rem)}
                 .arrow_4{ transform: translateY(-13rem) translateX(29rem)}
                 .arrow_5{ transform: translateY(-9rem) translateX(-3rem)}
+
+                .arrow{
+
+                    @media (max-width: 1100px){
+                        display: none;
+                    }
+                }
             }
         }
     }

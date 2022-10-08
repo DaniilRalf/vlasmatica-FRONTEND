@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e212f49-945b-4336-ba3c-e27609e4e0e1" name="Changes" comment="" />
+    <list default="true" id="8e212f49-945b-4336-ba3c-e27609e4e0e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/About/About.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/About/About.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Personal/Personal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Personal/Personal.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Personal/Personal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Personal/Personal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/VideoCourses/VideoCourses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/VideoCourses/VideoCourses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/VideoCourses/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/VideoCourses/swiper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Year-course/Year.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Year-course/Year.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Year-course/Year.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Year-course/Year.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,10 +40,29 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Даниил/Desktop/prog/vlasmatica",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "web.server"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,7 +72,11 @@
       <option name="presentableId" value="Default" />
       <updated>1664617754553</updated>
       <workItem from="1664617758261" duration="936000" />
+      <workItem from="1665228169205" duration="364000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

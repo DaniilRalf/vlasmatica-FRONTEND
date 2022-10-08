@@ -43,13 +43,15 @@ function Year(){
                                 <Arrow color={'white'}></Arrow> Для тех, кому нужен формат подготовки «c нуля»
                             </p>
                         </div>
-                        <Button 
-                                color={'#FFF9F3'} 
-                                background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
-                                width={'10rem'} 
-                                border={'none'}
-                                onClick={() => newModal()}
-                        >Подробнее</Button>
+                        <div className={style.btn_box}>
+                            <Button 
+                                    color={'#FFF9F3'} 
+                                    background={'linear-gradient(90.88deg, rgba(27, 38, 56, 0.48) 0.52%, rgba(45, 76, 126, 0.48) 99.51%)'} 
+                                    width={'10rem'} 
+                                    border={'none'}
+                                    onClick={() => newModal()}
+                            >Подробнее</Button>
+                        </div>
                     </div>
                     <div className={style.year_box__img}></div>
                     <img src={arynaPhoto} alt="Aryuna photo" />
